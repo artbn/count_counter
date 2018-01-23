@@ -1,18 +1,18 @@
 # What is this?
 A long requested feature at /r/livecounting (LC) is a way to track the number of counts a counter preforms without needing to wait for the daily Hall of Counters (HoC). This is a hopefully simple method to do just that. This has been created with Windows OS in mind but it is possible to modify for use with other operating systems.
 
-# What you need to have to use
+# What you need to use
 1. Reddit Account
 2. Be a part of this [counting thread](https://www.reddit.com/live/ta535s1hq2je/)
 3. [Python 3](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe)
-4. Websocket - [Learn how to install]()
-5. PRAW - [Learn how to install]()
+4. Websocket - [Learn how to install](https://github.com/artbn/count_counter#how-to-install-websocket)
+5. PRAW - [Learn how to install](https://github.com/artbn/count_counter#how-to-install-websocket-1)
 
 ## How to install Websocket
 1. Open CMD (Ctrl + R and then type in `cmd`)
 2. type `pip install websocket-client` and hit enter
 
-## How to install Websocket
+## How to install PRAW
 1. Open CMD (Ctrl + R and then type in `cmd`)
 2. type `pip install praw` and hit enter
 
@@ -71,4 +71,4 @@ Remember to keep your client id/client secret both secret just as you would for 
 5. When you are done using it, just close the screen. The count will reset when you restart it again.
 
 # Disclaimer
-Testing for this has been minimal. If it doesn't work as expected for you, contact /u/artbn. Also contact me if the instructions below are unclear.
+Testing for this has been minimal. If it doesn't work as expected for you, contact /u/artbn. Also contact me if the instructions above are unclear.

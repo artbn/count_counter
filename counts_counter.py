@@ -78,18 +78,27 @@ login = bot_login()
 # Retrieve WebSocket URL
 websocket_url = (thread_about())['data']['websocket_url'];
 
-# Setup functions to print different things for different stages of connection
-on_open = lambda ws: print('WebSocket connection opened')
-
 def on_close(ws):
 	print('WebSocket connection attempting to close')
 	ws.run_forever()
 
-# Now connect to the websocket
-ws = websocket.WebSocketApp(
-    websocket_url,
-    on_open = on_open,
-    on_close = on_close,
-    on_message = on_message
-)
-ws.run_forever();
+def on_open(ws):
+	print('WebSocket connection opened')
+
+def connect():
+	# Now connect to the websocket
+	ws = websocket.WebSocketApp(
+	    websocket_url,
+	    on_open = on_open,
+	    on_close = on_close,
+	    on_message = on_message
+	)
+	ws.run_forever();
+
+while 1:
+	try:
+		connect()
+	except:
+		time.sleep(3)
+		connect()
+		print("Tracker is back on!")
