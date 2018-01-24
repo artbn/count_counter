@@ -4,7 +4,7 @@ A long requested feature at /r/livecounting (LC) is a way to track the number of
 # What you need to use
 1. Reddit Account
 2. Be a part of this [counting thread](https://www.reddit.com/live/ta535s1hq2je/)
-3. [Python 3](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe)
+3. [Python 3](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe). During installation, make sure to check the box that says `Add Python 3.6 to PATH`
 4. Websocket - [Learn how to install](https://github.com/artbn/count_counter#how-to-install-websocket)
 5. PRAW - [Learn how to install](https://github.com/artbn/count_counter#how-to-install-websocket-1)
 
